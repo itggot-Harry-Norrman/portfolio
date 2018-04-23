@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html lang="en"
+    head
+        meta charset="UTF-8"/
+        meta name="viewport" content="width=device-width, initial-scale=1.0"/
+        meta http-equiv="X-UA-Compatible" content="ie=edge"/
+        link rel="stylesheet" href="css/style.css"/
+        link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet"
+        title Document
+    body
+        .main_art 
+            ==yield
+    script src="./js/jquery.js"
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    script src="./js/parallax.js"
+    javascript:
+        $('.art1').parallax({imageSrc:'./img/test.png'});
+        $('.art3').parallax({imageSrc:'./img/two.jpg'});
+        $("#b1").click(function () {
+          $('html, body').stop().animate({
+            scrollTop: $("#a1").offset().top - "65" + "px"
+          }, 1000);
+        });
+        $("#b2").click(function () {
+          $('html, body').stop().animate({
+            scrollTop: $("#a2").offset().top - "65" + "px"
+          }, 800);
+        });
+        $("#b3").click(function () {
+          $('html, body').stop().animate({
+            scrollTop: $("#a3").offset().top - "65" + "px"
+          }, 800);
+        });
