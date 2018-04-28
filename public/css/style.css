@@ -110,7 +110,8 @@ h2 {
     border-bottom: 1px solid black;
     background-image: url("../img/grabb.png");
     background-size: 1920px 700px;
-    background-position: center;
+    background-position: center; 
+    none;
 }
 .art3 {
     height: 800px;
